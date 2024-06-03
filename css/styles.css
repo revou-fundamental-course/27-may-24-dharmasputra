@@ -17,10 +17,10 @@ nav{
 nav>section{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .nav-item{
-    border: 1px solid black;
     padding: 8px;
     text-decoration: none;
     color: black;
@@ -28,16 +28,16 @@ nav>section{
 }
 
 .nav-item:hover{
-    color: lightblue;
+    color: lightgray;
 }
 
-.section-container{
+/* .section-container{
     background-color: whitesmoke;
-}
+} */
 
 .banner-container{
     height: 258px;
-    border: 1px solid black;
+    background: linear-gradient(whitesmoke, lightgray);
 }
 
 .project-container{
@@ -55,18 +55,33 @@ nav>section{
 }
 
 .form-result{
-    height: 100px;
-    border: 1px solid black;
+    height: 100%;
+    /* border: 1px solid black; */
 }
 
 .contact-me-section{
     display: flex;
+    justify-content: space-between;
 }
 
 .result-container{
-    width: 100%;
+    width: 50%;
 }
 
-footer{
-    background-color: whitesmoke;
+#project1{
+    background-image: url('/Assets/ProjectOneIcon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project2{
+    background-image: url('/Assets/ProjectTwoIcon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#project3{
+    background-image: url('/Assets/ProjectThreeIcon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
