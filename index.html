@@ -6,7 +6,106 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Dharma Portfolio</title>
 </head>
-<body>
-    
+<body style="margin: 0;">
+    <nav>
+        <div class="logo-icon"></div>
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#projects">My Projects</a>
+            <a class="nav-item" href="#contact-me">Contact Me</a>
+        </section>
+    </nav>
+    <hr>
+    <section class="section-container">
+        <!-- Home -->
+        <section id="home">
+            <header>
+                <h1>Hi Dharma, Welcome to Website</h1>
+            </header>
+
+            <article>
+                <p>Ini adalah website portfolio</p>
+                <div class="banner-container"></div>
+            </article>
+        </section>
+        <hr>
+        <!-- My Projects -->
+        <section id="projects">
+            <header>
+                <h1 style="text-align: center;">My Projects</h1>
+            </header>
+
+            <article class="project-list">
+                <div class="project-container">
+                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
+                    <h5>Project 1</h5>
+                </div>
+
+                <div class="project-container">
+                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
+                    <h5>Project 2</h5>
+                </div>
+
+                <div class="project-container">
+                    <div style="width: 50px; height: 50px; border: 1px solid black; border-radius: 50%;"></div>
+                    <h5>Project 3</h5>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <!-- Contact Me -->
+        <section id="contact-me">
+            <header>
+                <h1>Contact Me</h1>
+            </header>
+
+            <section class="contact-me-section">
+                <!-- Form -->
+                <section>
+                    <form action="">
+                        <table class="tablediri">
+                            <tr>
+                                <td><label for="nama">Name</label></td>
+                                <td>:</td>
+                                <td><input type="text" name="nama"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tanggallahir">Birthday</label></td>
+                                <td>:</td>
+                                <td><input type="date" name="tanggallahir"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="jeniskelamin">Gender</label></td>
+                                <td>:</td>
+                                <td>
+                                    <input type="radio" id="laki-laki">
+                                    <label for="laki-laki">Male</label>
+                                    <input type="radio" id="perempuan">
+                                    <label for="perempuan">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="pesan">Message</label></td>
+                                <td>:</td>
+                                <td><textarea rows="8" cols="64" id="pesan" placeholder="Your Message Here..."></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><input type="submit" style="min-width: 100%;"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+
+                <!-- Result -->
+                <section class="result-container">
+                    <div class="form-result"></div>
+                </section>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <footer>
+        <p style="text-align: right;">Created by Dharma</p>
+    </footer>
 </body>
 </html>

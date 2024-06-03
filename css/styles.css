@@ -1,1 +1,72 @@
-/* This is where 
+/* This is where styling is being set up */
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('/Assets/Icon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+nav>section{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-item:hover{
+    color: lightblue;
+}
+
+.section-container{
+    background-color: whitesmoke;
+}
+
+.banner-container{
+    height: 258px;
+    border: 1px solid black;
+}
+
+.project-container{
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-container:hover{
+    transform: scale(1.2);
+}
+
+.project-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-result{
+    height: 100px;
+    border: 1px solid black;
+}
+
+.contact-me-section{
+    display: flex;
+}
+
+.result-container{
+    width: 100%;
+}
+
+footer{
+    background-color: whitesmoke;
+}
