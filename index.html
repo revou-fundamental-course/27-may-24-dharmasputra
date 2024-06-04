@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Dharma Portfolio</title>
 </head>
-<body style="margin: 0; background-color: whitesmoke;">
+<body style="background-color: whitesmoke;">
     <nav>
         <div class="logo-icon"></div>
         <section>
@@ -15,20 +15,28 @@
             <a class="nav-item" href="#contact-me">Contact Me</a>
         </section>
     </nav>
+
     <hr>
+
     <section class="section-container">
         <!-- Home -->
         <section id="home">
             <header>
-                <h1>Hi Dharma, Welcome to Website</h1>
+                <h1>Hi <span id="username">Dharma</span>, Welcome to Website</h1>
             </header>
 
             <article>
                 <p>This is a simple portfolio website</p>
-                <div class="banner-container"></div>
+                <div class="banner-container">
+                    <img class="slideshow" src="/Assets/Picture1.jpg" alt="Picture1">
+                    <img class="slideshow" src="/Assets/Picture2.jpg" alt="Picture2">
+                    <img class="slideshow" src="/Assets/Picture3.jpg" alt="Picture3">
+                </div>
             </article>
         </section>
+
         <hr>
+
         <!-- My Projects -->
         <section id="projects">
             <header>
@@ -52,7 +60,9 @@
                 </div>
             </article>
         </section>
+
         <hr>
+
         <!-- Contact Me -->
         <section id="contact-me">
             <header>
@@ -62,35 +72,35 @@
             <section class="contact-me-section">
                 <!-- Form -->
                 <section>
-                    <form action="">
+                    <form name="message-form" onsubmit="return ValidateForm()" action="">
                         <table class="tablediri">
                             <tr>
-                                <td><label for="nama">Name</label></td>
+                                <td><label for="name-input">Name</label></td>
                                 <td>:</td>
-                                <td><input type="text" name="nama"></td>
+                                <td><input required  id="name-input" type="text" placeholder="Your Name..." name="nama"></td>
                             </tr>
                             <tr>
-                                <td><label for="tanggallahir">Birthday</label></td>
+                                <td><label for="birth-date-input">Birthday</label></td>
                                 <td>:</td>
-                                <td><input type="date" name="tanggallahir"></td>
+                                <td><input required id="birth-date-input" type="date" name="birth-date"></td>
                             </tr>
                             <tr>
                                 <td><label for="jeniskelamin">Gender</label></td>
                                 <td>:</td>
                                 <td>
-                                    <input type="radio" id="laki-laki">
-                                    <label for="laki-laki">Male</label>
-                                    <input type="radio" id="perempuan">
-                                    <label for="perempuan">Female</label>
+                                    <input required type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td><label for="pesan">Message</label></td>
                                 <td>:</td>
-                                <td><textarea rows="8" cols="64" id="pesan" placeholder="Your Message Here..."></textarea></td>
+                                <td><textarea required rows="8" cols="64" id="pesan" placeholder="Your Message Here..." name="messages"></textarea></td>
                             </tr>
                             <tr>
-                                <td colspan="3"><input type="submit" style="min-width: 100%;"></td>
+                                <td colspan="3"><input id="submit-button" type="submit" style="min-width: 100%;"></td>
                             </tr>
                         </table>
                     </form>
@@ -99,15 +109,22 @@
                 <!-- Result -->
                 <section class="result-container">
                     <div class="form-result">
-                        <textarea rows="15" cols="124" id=""></textarea>
+                        <p>Name : <span id="sender-full-name"></span> </p>
+                        <p>Birthday : <span id="sender-birth-date"></span></p>
+                        <p>Gender : <span id="sender-gender"></span></p>
+                        <p>Message : <span id="sender-messages"></span></p>
                     </div>
                 </section>
             </section>
         </section>
     </section>
+
+    <br>
     <hr>
+
     <footer>
         <p style="text-align: right;">Created by Dharma</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

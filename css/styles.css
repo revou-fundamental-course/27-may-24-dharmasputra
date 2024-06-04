@@ -1,11 +1,40 @@
 /* This is where styling is being set up */
+@media only screen and (max-width:600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    nav>section{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo-icon{
+        margin-bottom: 16px;
+    }
+
+    .contact-me-section{
+        flex-direction: column;
+    }
+
+    form{
+        margin-bottom: 16px;
+    }
+}
+
 .logo-icon{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url('/Assets/Icon.jpg');
+    background-image: url('/Assets/UserIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+hr{
+    height: 2px;
+    border: none;
+    background-color: darkgray;
 }
 
 nav{
@@ -23,12 +52,14 @@ nav>section{
 .nav-item{
     padding: 8px;
     text-decoration: none;
+    border-radius: 5px;
     color: black;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 .nav-item:hover{
     color: lightgray;
+    background-color: black;
 }
 
 /* .section-container{
@@ -37,16 +68,20 @@ nav>section{
 
 .banner-container{
     height: 258px;
-    background: linear-gradient(whitesmoke, lightgray);
+}
+
+img{
+    max-height: 258px;
 }
 
 .project-container{
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .project-container:hover{
     transform: scale(1.2);
+    color: lightslategray;
 }
 
 .project-list{
@@ -56,7 +91,15 @@ nav>section{
 
 .form-result{
     height: 100%;
-    /* border: 1px solid black; */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: -5px 5px 15px 1px #000000;
+    padding-left: 10px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.form-result>p{
+    font-weight: bold;
 }
 
 .contact-me-section{
@@ -66,6 +109,12 @@ nav>section{
 
 .result-container{
     width: 50%;
+}
+
+.form-result:hover{
+    background-color: black;
+    color: lightgray;
+    box-shadow: none;
 }
 
 #project1{
@@ -84,4 +133,21 @@ nav>section{
     background-image: url('/Assets/ProjectThreeIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+form{
+    box-shadow: 5px 5px 15px 1px #000000;
+    border-radius: 5px;
+}
+
+#submit-button{
+    background-color: darkgray;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#submit-button:hover{
+    color: lightgray;
+    background-color: black;
 }
