@@ -26,7 +26,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url('/Assets/UserIcon.png');
+    background-image: url('Assets/UserIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,19 +118,19 @@ img{
 }
 
 #project1{
-    background-image: url('/Assets/ProjectOneIcon.png');
+    background-image: url('Assets/ProjectOneIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #project2{
-    background-image: url('/Assets/ProjectTwoIcon.png');
+    background-image: url('Assets/ProjectTwoIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #project3{
-    background-image: url('/Assets/ProjectThreeIcon.png');
+    background-image: url('Assets/ProjectThreeIcon.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
