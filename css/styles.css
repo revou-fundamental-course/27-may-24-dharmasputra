@@ -143,7 +143,7 @@ form{
 
 #submit-button{
     background-color: darkgray;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid darkgray;
     transition: color 0.3s, background-color 0.3s;
 }
