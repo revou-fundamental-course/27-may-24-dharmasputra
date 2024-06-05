@@ -72,6 +72,7 @@ nav>section{
 
 img{
     max-height: 258px;
+    width: 100%;
 }
 
 .project-container{
