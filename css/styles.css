@@ -51,12 +51,14 @@ nav>section{
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-right: 10px;
 }
 
 .nav-item{
     padding: 8px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
     color: black;
     transition: color 0.3s, background-color 0.3s;
 }
@@ -155,4 +157,24 @@ form{
 #submit-button:hover{
     color: lightgray;
     background-color: black;
+}
+
+#projects{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+nav{
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+footer{
+    margin-top: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.slideshow{
+    border-radius: 5px;
 }
